@@ -1,0 +1,16 @@
+
+flat ground  (20 sorties each, 600 m loop at 40 m)
+  method       returned   handover err m (median / p90)  drift %  landed  VO vel err m/s
+  ins              5/20            1427.9 / 2203.6       237.99    0/20           nan
+  flow            20/20              11.3 / 13.5           1.89    0/20          0.19
+  homography      20/20               1.4 / 3.0            0.24   20/20          0.06
+  essential        0/20            2417.0 / 3135.0       402.83    0/20          4.70
+  epipolar        20/20               1.8 / 2.5            0.30   20/20          0.07
+
+buildings 5-20 m  (20 sorties each, 600 m loop at 40 m)
+  method       returned   handover err m (median / p90)  drift %  landed  VO vel err m/s
+  ins              5/20            1427.9 / 2203.6       237.99    0/20           nan
+  flow            19/20              13.5 / 41.6           2.25    1/20          0.24
+  homography      19/20               5.0 / 10.7           0.83   12/20          0.09
+  essential        2/20            2359.6 / 3046.8       393.27    0/20          4.09
+  epipolar        20/20               3.9 / 6.2            0.65   16/20          0.08

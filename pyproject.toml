@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gpsfree"
+version = "0.1.0"
+description = "GPS-free multirotor mission: downward-camera visual odometry, INS fusion, cascade flight control and precision landing in one loop"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Pratyush Vatsa" }]
+keywords = ["gps-denied", "visual-odometry", "homography", "optical-flow", "multirotor", "precision-landing"]
+dependencies = [
+    "numpy>=1.22",
+    "dctk @ git+https://github.com/Pratyush150/drone-control-toolkit@ec49130",
+    "preland @ git+https://github.com/Pratyush150/precision-landing@20358e0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "matplotlib>=3.5"]
+
+[project.urls]
+Homepage = "https://github.com/Pratyush150/gps-free-drone"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

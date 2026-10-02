@@ -1,0 +1,6 @@
+numpy>=1.22
+matplotlib>=3.5
+pytest>=7.0
+# the flight controller and the landing stage are the author's own packages, pinned
+dctk @ git+https://github.com/Pratyush150/drone-control-toolkit@ec49130
+preland @ git+https://github.com/Pratyush150/precision-landing@20358e0
